@@ -22,6 +22,7 @@ function Marketing() {
 
     useEffect(() => {
         const fetchArticles = async () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
             try {
                 setLoading(true);
                 const response = await axios.get('https://community-blog-410b.onrender.com/api/blogs');
@@ -49,7 +50,7 @@ function Marketing() {
                 {/* Hero Section Skeleton */}
                 <Box
                     sx={{
-                        background: 'linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%)',
+                        background: '#1e3a8a',
                         py: { xs: 8, md: 12 },
                         textAlign: 'center',
                         position: 'relative',
@@ -61,7 +62,7 @@ function Marketing() {
                             left: 0,
                             right: 0,
                             bottom: 0,
-                            background: 'rgba(255,255,255,0.1)',
+                            // background: 'rgba(255,255,255,0.1)',
                             backdropFilter: 'blur(10px)',
                         }
                     }}
@@ -121,7 +122,7 @@ function Marketing() {
             {/* Enhanced Hero Section */}
             <Box
                 sx={{
-                    background: 'linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%)',
+                    background: '#1e3a8a',
                     py: { xs: 8, md: 12 },
                     textAlign: 'center',
                     position: 'relative',
@@ -133,7 +134,7 @@ function Marketing() {
                         left: 0,
                         right: 0,
                         bottom: 0,
-                        background: 'rgba(255,255,255,0.1)',
+                        // background: 'rgba(255,255,255,0.1)',
                         backdropFilter: 'blur(10px)',
                     },
                     '&::after': {
@@ -230,7 +231,7 @@ function Marketing() {
                                                             transform: 'scale(1.05)',
                                                         },
                                                         '& .card-title': {
-                                                            color: '#00d2ff',
+                                                            color: '#1e3a8a',
                                                         }
                                                     },
                                                     '&::before': {
@@ -240,7 +241,7 @@ function Marketing() {
                                                         left: 0,
                                                         right: 0,
                                                         height: '3px',
-                                                        background: 'linear-gradient(90deg, #00d2ff, #3a7bd5)',
+                                                        background: '#1e3a8a',
                                                         opacity: 0,
                                                         transition: 'opacity 0.3s ease',
                                                     },
@@ -276,8 +277,8 @@ function Marketing() {
                                                         size="small"
                                                         sx={{
                                                             alignSelf: 'flex-start',
-                                                            backgroundColor: '#e1f5fe',
-                                                            color: '#0277bd',
+                                                            backgroundColor: '#EFF2FD',
+                                                            color: '#1e3a8a',
                                                             fontWeight: 700,
                                                             fontSize: '0.75rem',
                                                             letterSpacing: '0.5px'

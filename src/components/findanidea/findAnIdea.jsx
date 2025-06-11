@@ -22,6 +22,7 @@ function FindAnIdea() {
 
     useEffect(() => {
         const fetchArticles = async () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
             try {
                 setLoading(true);
                 const response = await axios.get('https://community-blog-410b.onrender.com/api/blogs');
@@ -49,7 +50,7 @@ function FindAnIdea() {
                 {/* Hero Section Skeleton */}
                 <Box
                     sx={{
-                        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                        // background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
                         py: { xs: 8, md: 12 },
                         textAlign: 'center',
                         position: 'relative',
@@ -61,7 +62,7 @@ function FindAnIdea() {
                             left: 0,
                             right: 0,
                             bottom: 0,
-                            background: 'rgba(255,255,255,0.1)',
+                            background: '#1e3a8a',
                             backdropFilter: 'blur(10px)',
                         }
                     }}
@@ -121,7 +122,7 @@ function FindAnIdea() {
             {/* Enhanced Hero Section */}
             <Box
                 sx={{
-                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                    background: '#1e3a8a',
                     py: { xs: 8, md: 12 },
                     textAlign: 'center',
                     position: 'relative',
@@ -133,7 +134,7 @@ function FindAnIdea() {
                         left: 0,
                         right: 0,
                         bottom: 0,
-                        background: 'rgba(255,255,255,0.1)',
+                        // background: 'rgba(255,255,255,0.1)',
                         backdropFilter: 'blur(10px)',
                     },
                     '&::after': {
@@ -231,7 +232,7 @@ function FindAnIdea() {
                                                             transform: 'scale(1.05)',
                                                         },
                                                         '& .card-title': {
-                                                            color: '#8264B4',
+                                                            color: '#1e3a8a',
                                                         }
                                                     },
                                                     '&::before': {
@@ -241,7 +242,7 @@ function FindAnIdea() {
                                                         left: 0,
                                                         right: 0,
                                                         height: '3px',
-                                                        background: 'linear-gradient(90deg, #667eea, #764ba2)',
+                                                        background: '#1e3a8a',
                                                         opacity: 0,
                                                         transition: 'opacity 0.3s ease',
                                                     },
@@ -287,8 +288,8 @@ function FindAnIdea() {
                                                         size="small"
                                                         sx={{
                                                             alignSelf: 'flex-start',
-                                                            backgroundColor: 'rgba(155,122,214,0.2)',
-                                                            color: '#8264B4',
+                                                            backgroundColor: '#EFF2FD',
+                                                            color: '#1e3a8a',
                                                             fontWeight: 700,
                                                             fontSize: '0.75rem',
                                                             letterSpacing: '0.5px'

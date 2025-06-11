@@ -34,6 +34,7 @@ function Latest() {
 
     useEffect(() => {
         const fetchArticles = async () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
             try {
                 setLoading(true);
                 setError('');
@@ -78,7 +79,7 @@ function Latest() {
                 {/* Hero Section Skeleton */}
                 <Box
                     sx={{
-                        background: 'linear-gradient(135deg, #8FE7D7 0%, #8FE7D7 100%)',
+                        background: '#1e3a8a',
                         py: { xs: 8, md: 12 },
                         textAlign: 'center',
                         position: 'relative',
@@ -90,7 +91,7 @@ function Latest() {
                             left: 0,
                             right: 0,
                             bottom: 0,
-                            background: 'rgba(255,255,255,0.1)',
+                            // background: 'rgba(255,255,255,0.1)',
                             backdropFilter: 'blur(10px)',
                         }
                     }}
@@ -150,7 +151,7 @@ function Latest() {
             {/* Enhanced Hero Section */}
             <Box
                 sx={{
-                    background: '#7AE2CF',
+                    background: '#1e3a8a',
                     py: { xs: 8, md: 12 },
                     textAlign: 'center',
                     position: 'relative',
@@ -162,7 +163,7 @@ function Latest() {
                         left: 0,
                         right: 0,
                         bottom: 0,
-                        background: 'rgba(255,255,255,0.1)',
+                        // background: 'rgba(255,255,255,0.1)',
                         backdropFilter: 'blur(10px)',
                     },
                     '&::after': {
@@ -274,7 +275,7 @@ function Latest() {
                                                                     transform: 'scale(1.05)',
                                                                 },
                                                                 '& .card-title': {
-                                                                    color: '#8fe7d7',
+                                                                    color: '#1e3a8a',
                                                                 }
                                                             },
                                                             '&::before': {
@@ -323,8 +324,8 @@ function Latest() {
                                                                 size="small"
                                                                 sx={{
                                                                     alignSelf: 'flex-start',
-                                                                    backgroundColor: 'rgba(127,218,217,0.27)',
-                                                                    color: '#78e3d1',
+                                                                    backgroundColor: '#EFF2FD',
+                                                                    color: '#1e3a8a',
                                                                     fontWeight: 700,
                                                                     fontSize: '0.75rem',
                                                                     letterSpacing: '0.5px'
